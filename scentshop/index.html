@@ -1,0 +1,39 @@
+    <!-- Content loaded via AJAX will be placed here  url: "https://bsit3rdyear.org/Worksheets/ws3-0/groupleadertamtam/shop/scentshop/index.php",-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Scent Sanctuary Shop</title>
+        <!-- Include necessary CSS and JavaScript libraries -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+        <style type="text/css">
+            /* Add your CSS styles here */
+        </style>
+    </head>
+    <body>
+        <!-- Your HTML content goes here -->
+    
+        <div id="content">
+            <!-- Content loaded via AJAX will be placed here -->
+        </div>
+    
+        <!-- Include JavaScript code for AJAX request -->
+        <script>
+            $(document).ready(function() {
+                $.ajax({
+                type: "GET",
+			    cache: false,
+                    url: "https://bsit3rdyear.org/Worksheets/ws3-0/groupleadertamtam/shop/scentshop/index.php",
+                    success: function(response) {
+                        $("#content").html(response);
+                    }
+                });
+            });
+        </script>
+    </body>
+    </html>
+    
